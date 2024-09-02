@@ -78,6 +78,7 @@ include_once("header.php");
             if (password_verify($password, $hashed_password)) {
                 $_SESSION['user_name'] = $username;
                 $_SESSION['lic_code'] = $lic_code;
+                // redirect to landing page
                 header('Location: dashboard.php');
             } 
             else {
