@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 17, 2024 at 08:07 AM
+-- Generation Time: Dec 11, 2024 at 05:48 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.1.25
 
@@ -37,6 +37,18 @@ CREATE TABLE `userlist` (
   `mod5` tinyint(1) NOT NULL,
   `mod6` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `userlist`
+--
+
+INSERT INTO `userlist` (`username`, `password`, `mod1`, `mod2`, `mod3`, `mod4`, `mod5`, `mod6`) VALUES
+('jacques', 'jcwopager', 1, 0, 1, 0, 1, 0),
+('dider', '123456', 1, 1, 1, 1, 1, 1),
+('syeed', 'sywon', 0, 0, 0, 1, 1, 1),
+('russel', '123123', 1, 1, 1, 0, 0, 0),
+('tasin', 'tasin1', 0, 0, 0, 0, 1, 1),
+('jacques', 'jw123', 0, 0, 1, 1, 1, 0);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
